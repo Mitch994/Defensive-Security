@@ -1,14 +1,14 @@
-Blue Team: Summary of Operations
+**Blue Team: Summary of Operations**
 
-Table of Contents
+**Table of Contents:**
 
-**Network Topology
+**Network Topology**
 Description of Targets
 Monitoring the Targets
 Patterns of Traffic & Behaviour
-Suggestions for Going Further**
+Suggestions for Going Further
 
-Network Topology
+**Network Topology:**
 The following machines were identified on the network:
 Host Machine
 Operating System: Windows 10
@@ -34,10 +34,12 @@ Target 2
 Operating System: Debian Linux
 Purpose: Web Server
 IP Address: 192.168.1.115
-Description of Targets
+
+**Description of Targets:**
 The target of this attack was: Target 1 (192.168.1.110)
 Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. Other open ports include 111, 139, 445.
-Monitoring the Targets
+
+**Monitoring the Targets:**
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 Excessive HTTP Errors
 Excessive HTTP Errors is implemented as follows:
@@ -57,3 +59,5 @@ Metric: metricbeat
 Threshold: Will fire if the CPU is above 50% utilization for 5 minutes
 Vulnerability Mitigated: excessive CPU usage/ poor resource management
 Reliability: This alert is of a high reliability and shouldn’t generate any false positives
+
+**Suggestions for going futher:**
